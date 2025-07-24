@@ -17,8 +17,32 @@ public class Client {
         return "Client{" +
                 "name='" + name + '\'' +
                 ", clientType=" + clientType +
-                ", clientTypeInt=" + clientType.VALUE +
+                ", clientTypeINT=" + clientType.VALUE +
                 ", paymentType=" + paymentType +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ClientType getClientType() {
+        return clientType;
+    }
+
+    public void setClientType(ClientType clientType) {
+        this.clientType = clientType;
+    }
+
+    public PaymentType getPaymentType() {
+        return paymentType;
+    }
+
+    public void setPaymentType(PaymentType paymentType) {
+        this.paymentType = paymentType;
     }
 }
