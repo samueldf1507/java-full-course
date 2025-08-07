@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.Npolimorfism.service;
+package academy.devdojo.maratonajava.javacore.Npolimofirsm.service;
 
-import academy.devdojo.maratonajava.Npolimorfism.repository.Repository;
+import academy.devdojo.maratonajava.javacore.Npolimofirsm.repository.Repository;
 
 public class RepositoryArchive implements Repository {
     @Override

@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.Npolimorfism.domain;
+package academy.devdojo.maratonajava.javacore.Npolimofirsm.domain;
 
-public abstract class Product implements Taxable {
+public abstract class Product implements Taxable{
     protected String name;
     protected double price;
 
