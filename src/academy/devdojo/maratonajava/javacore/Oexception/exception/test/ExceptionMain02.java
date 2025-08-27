@@ -4,18 +4,19 @@ import java.io.File;
 import java.io.IOException;
 
 public class ExceptionMain02 {
-    public static void main(String[] args) throws IOException{
-        createNewArchive();
+    public static void main(String[] args) throws IOException {
+        createArchive();
     }
 
-    private static void createNewArchive() throws IOException{
+    private static void createArchive() throws IOException {
         File file = new File("archive\\teste.txt");
         try {
             boolean isCreated = file.createNewFile();
-            System.out.println("Arquivo criado " + isCreated);
+            System.out.println("Arquivo criado: " + isCreated);
+
         } catch (IOException e) {
-            e.printStackTrace();
-            throw e;
+            throw new IOException("Problema na hora de criar o arquivo");
         }
+
     }
 }
